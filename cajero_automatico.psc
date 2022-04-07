@@ -1,23 +1,23 @@
-Proceso cajero_automatico
+Proceso cajera_registradora
 	Definir cp, p, vp, tp, tf, td, cd, vu, cl, in, op, i Como Entero;
 	//cp: Cantidad de productos.	//p: Valor del producto actual.	//vp: Cantidad a vender del producto actual.
-	//tp: Total por producto Se calcula (Valor unitario por Cantidad).	//tf: Total factura.	//td: Total día.
+	//tp: Total por producto Se calcula (Valor unitario por Cantidad).	//tf: Total factura.	//td: Total dÃ­a.
 	//cd: Cantidad de dinero entregado por el cliente.	//vu: Variable que almacena el vuelto a entregar.
 	//cl: clave de la caja registradora.	//in: Variable que controla el fin del ciclo principal.
-	//op: Esta variable permite elegir las opciones del menú.
+	//op: Esta variable permite elegir las opciones del menÃº.
 	tf<-0;
 	td<-0;
 	cl<-123;
 	in<-0;
 	Mientras (in == 0) Hacer
-		Escribir "==Menú==";
+		Escribir "==MenÃº==";
 		Escribir "1. Vender";
-		Escribir "2. Ver Total del día y finalizar";
+		Escribir "2. Ver Total del dÃ­a y finalizar";
 		Leer op;
 		Segun op Hacer
 			1:
 				Limpiar Pantalla;
-				Escribir "Ingrese la cantidad de productos que venderá";
+				Escribir "Ingrese la cantidad de productos que venderÃ¡";
 				Leer cp;
 				Para i <- 1 Hasta cp Con Paso 1 Hacer
 					Escribir "Ingrese el valor del producto: ",i;
@@ -42,14 +42,14 @@ Proceso cajero_automatico
 					//tf vuelve a valor 0 para nuevas compras
 					tf<-0;
 				SiNo
-					Escribir "La contraseña es incorrecta intente nuevamente";
+					Escribir "La contraseÃ±a es incorrecta intente nuevamente";
 				FinSi
 			2:
 				Limpiar Pantalla;
 				in<-1;
 				Escribir "El total de las ventas del dia fue: ",td;
 			De Otro Modo:
-				Escribir "Ingresó una opcion inválida";
+				Escribir "IngresÃ³ una opcion invÃ¡lida";
 		FinSegun
 	FinMientras
 FinProceso
