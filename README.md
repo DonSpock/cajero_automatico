@@ -1,2 +1,2 @@
-# cajero_automatico
-cajero automatico de practica
+# cajera_registradora
+caja registradora de practica
