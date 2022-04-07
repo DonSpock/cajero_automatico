@@ -1,4 +1,4 @@
-Proceso cajera_registradora
+Proceso caja_registradora
 	Definir cp, p, vp, tp, tf, td, cd, vu, cl, in, op, i Como Entero;
 	//cp: Cantidad de productos.	//p: Valor del producto actual.	//vp: Cantidad a vender del producto actual.
 	//tp: Total por producto Se calcula (Valor unitario por Cantidad).	//tf: Total factura.	//td: Total día.
